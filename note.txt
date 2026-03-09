@@ -1,0 +1,25 @@
+"Live Dashboard for a Digital Machine."
+
+1. The "Translator" (Making Data Visual)
+Tell them: "Computers are constantly talking in huge, messy lists of numbers that humans can't read. This project acts like a translator. It takes those raw numbers (like how hard the computer is working) and turns them into something we can understand at a glance, like a glowing progress bar or a pulse."
+
+2. The "Remote Control" (The Connection)
+Explain how the website gets its information.
+
+The Story: "Normally, a website is like a book—the words don't change once they're printed. But this website is like a walkie-talkie."
+
+The Fix: "It’s constantly 'calling' the computer's engine every second to ask, 'How are you doing now?' The engine shouts back the numbers, and the website updates itself instantly without me having to refresh the page."
+
+3. The "Memory Bank" (LocalStorage)
+Explain why the numbers stay there even after a restart.
+
+The Story: "If you're tracking your weight, you write it down in a notebook so you don't forget your 'heaviest' day. This website has its own digital notebook."
+
+The Fix: "I programmed a 'memory' feature so the website remembers the highest spike in work it ever saw. Even if I turn the computer off and come back tomorrow, that record is still sitting there on the screen."
+
+4. The "Glass and Neon" (The Design)
+Explain the look of the project.
+
+The Story: "I wanted it to look like a screen from a sci-fi movie, but that requires 'flexible' art."
+
+The Fix: "Instead of using a static picture, I used 'code-based drawing.' This means the glows and the bars aren't images—they are instructions. Because they are instructions, they can grow, shrink, and change color instantly as the data changes."

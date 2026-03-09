@@ -1,0 +1,57 @@
+:root {
+    --neon-cyan: #00f3ff;
+    --neon-pink: #ff00ff;
+    --bg-dark: #050505;
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --border-glow: 0 0 10px rgba(0, 243, 255, 0.3);
+}
+
+body {
+    background: var(--bg-dark);
+    color: var(--neon-cyan);
+    font-family: 'Courier New', monospace;
+    margin: 0; padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.widget {
+    background: var(--glass-bg);
+    border: 1px solid rgba(0, 243, 255, 0.2);
+    padding: 20px;
+    position: relative;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.widget:hover {
+    border-color: var(--neon-cyan);
+    box-shadow: var(--border-glow);
+}
+
+#cpu-path {
+    fill: none;
+    stroke: var(--neon-cyan);
+    stroke-width: 1;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+}
+
+.bar-container {
+    width: 100%; height: 10px;
+    background: #222; margin: 10px 0;
+}
+
+.fill-bar {
+    width: 0%; height: 100%;
+    background: var(--neon-pink);
+    box-shadow: 0 0 10px var(--neon-pink);
+    transition: width 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.stat-readout { font-size: 2rem; font-weight: bold; }

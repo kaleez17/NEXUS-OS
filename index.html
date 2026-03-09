@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NEXUS // System Monitor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app" class="dashboard-root">
+        <header class="system-header">
+            <h1 data-text="NEXUS_OS">NEXUS_OS</h1>
+            <div id="clock" class="mono-font">00:00:00</div>
+        </header>
+
+        <main class="grid-container">
+            <section class="widget" id="cpu-monitor">
+                <h3>CPU_LOAD</h3>
+                <div class="visual-wrapper">
+                    <svg viewBox="0 0 100 20">
+                        <path id="cpu-path" d="M0 10 L10 10 L15 5 L20 15 L25 10 L100 10" />
+                    </svg>
+                </div>
+                <div class="stat-readout"><span id="cpu-val">0</span>%</div>
+            </section>
+
+            <section class="widget" id="mem-monitor">
+                <h3>MEM_ALLOCATION</h3>
+                <div class="bar-container">
+                    <div id="mem-bar" class="fill-bar"></div>
+                </div>
+                <div class="stat-readout"><span id="mem-val">0</span>GB</div>
+            </section>
+        </main>
+
+        <footer class="system-status">
+            <div class="indicator">SYSTEM_STABLE</div>
+            <div class="indicator" id="db-latency">DB_LATENCY: 12ms</div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
